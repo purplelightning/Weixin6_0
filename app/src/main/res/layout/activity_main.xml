@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ss="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--xmlns:ss="http://schemas.android.com/apk/res/com.example.wind.weixin6_0"
+    命名空间直接用res-auto不需要写包名-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal">
+
+        <com.example.wind.weixin6_0.ChangeColorIconWithText
+            android:id="@+id/indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            ss:color="#ff45c01a"
+            ss:icon="@drawable/ic_menu_start_conversation"
+            ss:text="@string/app_name"
+            ss:text_size="12sp"/>
+
+        <com.example.wind.weixin6_0.ChangeColorIconWithText
+            android:id="@+id/indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            ss:color="#ff45c01a"
+            ss:icon="@drawable/ic_menu_friendslist"
+            ss:text="@string/tab_contact"
+            ss:text_size="12sp"/>
+
+        <com.example.wind.weixin6_0.ChangeColorIconWithText
+            android:id="@+id/indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            ss:color="#ff45c01a"
+            ss:icon="@drawable/ic_menu_emoticons"
+            ss:text="@string/tab_find"
+            ss:text_size="12sp"/>
+
+        <com.example.wind.weixin6_0.ChangeColorIconWithText
+            android:id="@+id/indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            ss:color="#ff45c01a"
+            ss:icon="@drawable/ic_menu_allfriends"
+            ss:text="@string/tab_me"
+            ss:text_size="12sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
